@@ -1,42 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    width: 100%;
-    padding: 2rem;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
 }
 
 .menu {
-    position: fixed;
-    z-index: 1000;
-    width: 150px;
-    background: #1b1a1a;
-    border-radius: 5px;
-    display: none;
-    list-style: none;
+  position: fixed;
+  z-index: 1000;
+  width: 150px;
+  background: #1b1a1a;
+  border-radius: 5px;
+  display: none;
+  list-style: none;
 }
 
 .menu.open {
-    display: block;
+  display: block;
 }
 
 .menu .menu-item {
-    padding: 8px 10px;
-    font-size: 1rem;
-    color: #eee;
-    cursor: pointer;
-    transition: background-color .2s ease-in;
-    border-radius: inherit;
+  padding: 8px 10px;
+  font-size: 1rem;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+  border-radius: inherit;
 }
 
 .menu .menu-item:hover {
-    background: #343434;
+  background: #343434;
+}
+
+.timer {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  font-weight: 700;
+  width: 250px;
+}
+
+button:hover {
+  background: rgb(53, 167, 110);
+}
+
+button:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+.form {
+  position: absolute;
+  top: 50px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.input {
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin: auto;
+  margin-bottom: 15px;
+  display: block;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.label {
+  font-size: 2rem;
+}
+
+.timer_text {
+  position: absolute;
+  top: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  text-align: center;
+}
+
+.picture {
+  border: 1px solid black;
+  width: 112px;
+  height: 112px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.pcbtn {
+  width: 112px;
+  height: 112px;
+  cursor: pointer;
+}
+
+.sound_header {
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.score_counter {
+  color: rgb(114, 113, 113);
+}
+
+.score_counter h1 {
+  position: absolute;
+  top: 70px;
+  font-size: 3rem;
+}
+
+.score_counter h2 {
+  position: absolute;
+  top: 50px;
+  font-size: 2rem;
 }
